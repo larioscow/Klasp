@@ -1,0 +1,36 @@
+.menu {
+  padding: 0;
+}
+.cuenta {
+  padding: 0;
+  width: 8rem;
+  justify-content: space-between;
+}
+.right {
+  width: fit-content;
+  height: fit-content;
+  order: 1;
+}
+.center {
+  width: fit-content;
+  height: fit-content;
+  order: 2;
+}
+.bottom {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  order: 3;
+}
+.left {
+  width: fit-content;
+  height: fit-content;
+  order: 4;
+}
+.header{
+    justify-content: space-around;
+}
+
+.slider--container{
+  height: 300px;
+}
