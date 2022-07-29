@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    
+    <link rel="stylesheet" href="../css/mobile.css"/>
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width:800px)" />
+    <link rel="stylesheet" href="../css/s-desktop.css" media="screen and (min-width:950px)" />
+    <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width:1200px)" />
+    <link rel="stylesheet" href="productos.css" />
+    <link rel="stylesheet" href="/footer/styles.css">
+    <title>Productos de Computo | Klasp</title>
+  </head>
+  <body id="body">
+      
+    <div class="login-popup">
+      <div class="box">
+          <div class="img-area">
+              <div class="img"></div>
+              <header><span class="inicial">K</span><span>lasp</span></header>
+          </div>
+          <div class="form">
+              <div class="close">&times;</div>
+              <h1>Bienvenido</h1>
+              <p>Seleciona tu forma de entrega.</p>
+              <form id="entrega">
+                <div id="codigomsg">
+                </div>
+                  <input type="number" id="cpinput" placeholder="CP de 5 digitos" required onkeypress="inpNum(event)">
+                  <button type="button" class="btn-pop" id="domicilio">Envio a domicilio </button>
+                  <button type="button" class="btn-pop" id="sucursal">Recoger en sucursal</button>
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <div class="header-fixed">
+    <header class="header">
+        <div class="header--container right">
+            <div class="header__item menu">
+                <!--MENU HAMBURGUESA-->
+                <input class="checkbox" type="checkbox" />
+                <div class="lista-hamburguesa">
+                  <ul class="hamburguesa-items">
+                    <li id="ubmobile">
+                        <i class="fi fi-rs-marker svg"></i>
+                        <span id="ubmobiletext"></span>
+                    </li>
+                    <li><a href="/mayoreo/mayoreo.html">Mayoreo</a></li>
+                  </ul>
+                </div>
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </div>
+        </div>
+        <div class="modo-adjust">
+          <div class="modo">
+            <span id="fake-menudeo">Menudeo</span>
+            <ul>
+              <li id="menudeo">Menudeo</li>
+              <li id="mayoreo">Mayoreo</li>
+          </ul>
+        </div>
+        <div class="extra">
+          <i class="fi fi-rr-angle-small-down" id="extraarrow"></i>
+        </div>
+      </div>
+        <div class="direccion">
+          <i class="fi fi-rs-marker svg" id="ubisvg"></i>
+          <span id="ub"></span>
+        </div>
+        <div class="header--container center">
+            <div class="header__item logo">
+                <a href="/index.html" class="klasp-logo"><span class="inicial">K</span><span>lasp</span></a
+        >
+      </div>
+    </div>
+    <div class="header--container left">
+      <div class="cuenta">
+        <div class="header__item usuario">
+          <a href="/nuevo formulario/login.html" class="user-logo"><i class="fa-regular fa-user"></i></a>
+        </div>
+        <div class="header__item carrito">
+          <!--CARRITO-->
+          <i class="fi fi-rr-shopping-cart" id="cart-logo"></i>
+          <div class="cart-container" id="cartpop">
+              <div class="carrito-1-container">
+                <i class="fi fi-rr-arrow-small-left" id="cart-left"></i>
+                <div class="micarrito">
+                  <span>Mi carrito</span>
+                </div>
+              </div>
+              <span id="empty">El carrito está vacio</span>
+              <span id="cara">(。﹏ 。*)</span>
+              <div id="cart-items-container">
+
+              </div>
+              <div class="subtotal-caja" id="subcaja">
+                <div class="subtotal-precio-caja">
+                  <span>subtotal:</span>
+                  <span id="subtotal"></span>
+                </div>
+                <button>Finalizar compra</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header--container bottom">
+      <form>
+        <div class="header__item barra-de-busqueda">
+          <input type="text" placeholder="busca aquí lo que necesitas " id="searchbar" name="searchbar"/>
+          <button class="button" type="submit" name="searchbutton" id="searchbutton">
+            <i class="fi fi-rs-search svg" id="searchButton"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </header>
+</div>
+
+    <div class="pcont" id="contenedor-de-productos">
+      
+    </div>
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+          <h3><span>K</span>lasp</h3>
+
+          <p class="footer-links">
+              <a href="#" class="link-1">Empresa</a>
+              
+              <a href="/footer/desarrolladores.html">Nuestro equipo</a>
+          
+              <a href="/footer/devoluciones.html">Desvoluciones</a>
+          
+              <a href="/footer/terminosycondiciones.html">Terminos y Condiciones</a>
+              
+              
+          </p>
+
+          <p class="footer-company-name">© 2022 Klasp - Todos los Derechos Reservados. sitio 100% seguro </p>
+      </div>
+
+      <div class="footer-center">
+
+          <div class="contact">
+                 <div class="num">
+              <i class="fa fa-phone"></i>
+              <p>351.109.11.05</p>
+                 </div>
+                 <div class="imail">
+              <i class="fa fa-envelope"></i>
+              <p>klasp@suport.com</p>
+                  </div>
+          </div>
+
+      </div>
+
+      <div class="footer-right">
+
+
+  <p>
+    Siguenos
+  </p>
+          <div class="footer-icons">
+
+              <a href="#"><i class="fi fi-brands-facebook"></i></a>
+              <a href="#"><i class="fi fi-brands-twitter"></i></a>
+              <a href="#"><i class="fi fi-brands-instagram"></i></a>
+              <a href="#"><i class="fi fi-brands-youtube"></i></a>
+
+          </div>
+
+      </div>
+
+  </footer>
+  <script src="https://kit.fontawesome.com/741e24d964.js" crossorigin="anonymous"></script>
+    <script src="js/computo.js"></script>
+    <script src="../script.js"></script>
+    <script src="../carrito-main.js"></script>
+  </body>
+</html>
