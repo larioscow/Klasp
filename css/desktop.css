@@ -1,0 +1,166 @@
+.arrow {
+    display: initial;
+    transition: 0.4s;
+    font-size: 36px;
+}
+
+.arrow:hover {
+    transform: scale(1.5);
+}
+
+.section-container {
+    width: fit-content;
+    height: fit-content;
+    margin: 60px auto;
+}
+
+.mas-buscados--container {
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.categorias__element {
+    width: 300px;
+}
+
+.categorias--container {
+    height: 360px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 1070px;
+}
+
+.categorias--items--container {
+    width: 1200px;
+    height: 360px;
+    gap: 18px;
+}
+
+
+/* =====================================
+SLIDER CATEGORIAS
+==================================*/
+#element1{
+    display: initial;
+    transition: 350ms ease-in-out;
+    position: relative;
+}
+#element2{
+    display: initial;
+    transition: 350ms ease-in-out;
+    position: relative;
+}
+#element3{
+    display: initial;
+    transition: 350ms ease-in-out;
+    position: relative;
+}
+#element4{
+    display: initial;
+    transition: 350ms ease-in-out;
+    position: relative;
+}
+
+#element1.hide{
+    transform: scale(0.5);
+    opacity: 30%;  
+}
+#element2.hide{
+    transform: scale(0.5); 
+    opacity: 30%;  
+}
+#element3.hide{
+    transform: scale(0.5);  
+    opacity: 30%;  
+    
+}
+#element4.hide{
+    transform: scale(0.5); 
+    opacity: 30%;  
+}
+
+#element1.shide{
+    transition: 200ms ease-in-out;
+    transform: scale(0.3);
+    opacity: 0%;  
+}
+#element2.shide{
+    transition: 200ms ease-in-out;
+    transform: scale(0.3); 
+    opacity: 0%;  
+}
+#element3.shide{
+    transition: 200ms ease-in-out;
+    transform: scale(0.3);  
+    opacity: 0%;  
+    
+}
+#element4.shide{
+    transition: 200ms ease-in-out;
+    transform: scale(0.3); 
+    opacity: 0%;  
+}
+
+
+#element1.show{
+    transform: scale(1);
+    opacity: 100%;  
+}
+#element2.show{
+    transform: scale(1); 
+    opacity: 100%;  
+}
+#element3.show{
+    transform: scale(1);  
+    opacity: 100%;  
+    
+}
+#element4.show{
+    transform: scale(1); 
+    opacity: 100%;  
+}
+
+#element1.hidden{
+    position: absolute;
+    transform: translateX(-9999%);  
+}
+#element2.hidden{
+    position: absolute;
+    transform: translateX(-9999%);  
+}
+#element3.hidden{
+    position: absolute;
+    transform: translateX(-9999%);  
+    
+}
+#element4.hidden{
+    position: absolute;
+    transform: translateX(-9999%);  
+}
+
+#element1.translate{
+    transform: translateX(-320px);
+}
+#element2.translate{
+    transform: translateX(-320px);
+}
+#element3.translate{
+    transform: translateX(-320px);
+}
+#element4.translate{
+    transform: translateX(-320px);
+}
+
+#element1.translate2{
+    transform: translateX(320px);
+}
+#element2.translate2{
+    transform: translateX(320px);
+}
+#element3.translate2{
+    transform: translateX(320px);
+}
+#element4.translate2{
+    transform: translateX(320px);
+}

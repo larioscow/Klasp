@@ -1,0 +1,114 @@
+.menu {
+    padding: 0;
+}
+
+.cuenta {
+    padding: 0;
+    width: 80px;
+    justify-content: space-between;
+}
+
+.menu .checkbox,
+.menu .hamburger-lines {
+    top: 40px;
+}
+
+.right {
+    width: fit-content;
+    height: fit-content;
+    order: 1;
+}
+
+.center {
+    width: fit-content;
+    height: fit-content;
+    order: 2;
+}
+
+.bottom {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    order: 3;
+}
+
+.left {
+    width: fit-content;
+    height: fit-content;
+    order: 4;
+}
+
+.header {
+    justify-content: space-around;
+}
+
+.slider--container {
+    height: 300px;
+}
+#element4 figcaption{
+    font-size: 2.8rem;
+}
+
+/*============
+CATEGORÍAS
+=============*/
+
+#element1,
+#element4 {
+    margin: 0;
+}
+
+.categorias--items--container {
+    overflow-x: initial;
+    height: fit-content;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 690px;
+    gap: 20px;
+}
+
+.categorias__element {
+    position: static;
+    scroll-snap-align: initial;
+    width: 370px;
+    height: 300px;
+}
+
+.categorias__element:hover {
+    transform: scale(1.03);
+}
+
+
+/*==========
+CATEGORÍAS
+============*/
+
+.buscados-item1,
+.buscados-item6 {
+    margin: 0;
+}
+
+.buscados-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.mas-buscados--container {
+    width: 100%;
+    overflow-x: initial;
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.mas-buscados__item {
+    min-width: 245px;
+    transition: 0.5s;
+}
+
+.mas-buscados__item .agregar-al-carrito {
+    width: 200px;
+}

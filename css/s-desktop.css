@@ -1,0 +1,138 @@
+.header {
+    justify-content: space-around;
+    max-width: 1444px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    display: none;
+}
+
+.modo {
+    display: flex;
+    flex-direction: column;
+    width: 97px;
+    height: 26px;
+    font-size: 1.8rem;
+}
+#fake-menudeo{
+    display: none;
+}
+#fake-menudeo.display{
+    user-select: none;
+    cursor: pointer;
+    display: initial;
+}
+.modo ul{
+    all: unset;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.modo li{
+    width: 95px;
+    height: 40px;
+}
+#menudeo{
+    user-select: none;
+    cursor: pointer;
+}
+#mayoreo{
+    user-select: none;
+    cursor: pointer;
+    display: none;
+}
+#menudeo.onselect{
+    margin-top: 10px;
+    position: relative;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px 10px 0px 0px;
+    z-index: 200;
+}
+
+#mayoreo.onselect{
+    background-color: #fff;
+    position: relative;
+    padding: 12px;
+    border-radius: 0px 0px 10px 10px;
+    display: initial;
+    z-index: 200;
+}
+.modo-adjust{
+    display: flex;
+}
+.fi-rr-angle-small-down{
+    cursor: pointer;
+    font-size: 2.4rem;
+    position: relative;
+    right: 18px;
+}
+#menudeo.onselect:hover,#mayoreo.onselect:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+.direccion {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+}
+#ub{
+    user-select: none;
+    width: fit-content;
+    line-height: 1.2;
+}
+.direccion .svg {
+    display: block;
+    font-size: 2.2rem;
+}
+
+.direccion span {
+    font-size: 1.8rem;
+    padding-left: 10px;
+}
+
+.categorias--center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.categorias--center>div {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: fit-content;
+    max-width: 1000px;
+}
+
+.categorias--container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.categorias--items--container {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.categorias__element {
+    width: 40%;
+}
+
+.buscados-container {
+    width: 930px;
+}
+
+.mas-buscados__item {
+    width: 300px;
+}
+
+.mas-buscados__item button {
+    width: 250px;
+}
